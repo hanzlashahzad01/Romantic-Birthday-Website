@@ -1,258 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday, My Love 💖</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="password-overlay" class="overlay visible">
-      <div class="overlay-card">
-        <h1>Private Birthday Surprise 🔒</h1>
-        <p>This little universe is only for you. Enter our secret word to enter.</p>
-        <input id="password-input" type="password" placeholder="Our secret..." />
-        <button id="password-submit">Unlock Love</button>
-        <p id="password-error" class="error"></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, My Love 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="password-overlay" class="overlay visible">
+    <div class="overlay-card">
+      <h1>Private Birthday Surprise 🔒</h1>
+      <p>This little universe is only for you. Enter our secret word to enter.</p>
+      <input id="password-input" type="password" placeholder="Our secret..." />
+      <button id="password-submit">Unlock Love</button>
+      <p id="password-error" class="error"></p>
+    </div>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="media/background-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="music-toggle">
+    <button id="music-btn">Play Music ♫</button>
+  </div>
+
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main id="main-content" class="hidden">
+    <section id="landing" class="full-screen section">
+      <div class="bg-gradient"></div>
+      <div class="hero-grid">
+        <div class="content-center hero-text">
+          <h2>Happy Birthday</h2>
+          <h1 class="name-title">
+            My Love, <span id="her-name">[Her Name]</span> 💖
+          </h1>
+          <p class="subtitle">
+            Every heartbeat of mine whispers your name, and today belongs only to you.
+          </p>
+          <button class="primary-btn" id="reveal-btn">
+            Tap to Reveal Your Surprise ✨
+          </button>
+          <p class="small-note">
+            Made with endless love by <span id="my-name">[Your Name]</span>.
+          </p>
+        </div>
+        <div class="hero-photo-card">
+          <div class="hero-photo-glow"></div>
+          <img src="media/photo1.png" alt="A favorite memory of us" class="hero-photo" />
+          <div class="hero-photo-caption">
+            “Tum ho toh saari duniya thodi aur khoobsurat lagti hai.”
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="scroll-indicator">Scroll to explore ⬇</div>
+    </section>
 
-    <audio id="bg-music" loop>
-      <source src="media/background-music.mp3" type="audio/mpeg" />
-    </audio>
-
-    <div class="music-toggle">
-      <button id="music-btn">Play Music ♫</button>
-    </div>
-
-    <div class="floating-hearts" aria-hidden="true"></div>
-
-    <main id="main-content" class="hidden">
-      <section id="landing" class="full-screen section">
-        <div class="bg-gradient"></div>
-        <div class="hero-grid">
-          <div class="content-center hero-text">
-            <h2>Happy Birthday</h2>
-            <h1 class="name-title">
-              My Love, <span id="her-name">[Her Name]</span> 💖
-            </h1>
-            <p class="subtitle">
-              Every heartbeat of mine whispers your name, and today belongs only to you.
+    <section id="reveal" class="section">
+      <div class="section-inner">
+        <h2>Your Birthday Letter</h2>
+        <div class="card love-letter">
+          <div class="card-inner">
+            <p class="salutation">To my dearest <span id="her-name-2">[Her Name]</span>,</p>
+            <p>
+              Today the world became softer, warmer and more beautiful—because this was
+              the day you arrived. Since the moment you walked into my life, every day
+              has felt a little more like home.
             </p>
-            <button class="primary-btn" id="reveal-btn">
-              Tap to Reveal Your Surprise ✨
-            </button>
-            <p class="small-note">
-              Made with endless love by <span id="my-name">[Your Name]</span>.
+            <p>
+              I love the way your smile quietly fixes even my loudest storms, the way
+              your presence turns ordinary moments into memories I never want to forget,
+              and the way your heart holds more kindness than I ever thought possible.
+            </p>
+            <p>
+              If I could wrap all my love for you into words, the universe would run out
+              of pages. So instead, I made this small digital universe, where every
+              sparkle and every heartbeat belongs only to you.
+            </p>
+            <p class="closing">
+              Always yours, <span id="my-name-2">[Your Name]</span> 🫶
             </p>
           </div>
-          <div class="hero-photo-card">
-            <div class="hero-photo-glow"></div>
-            <img
-              src="media/photo1.jpg"
-              alt="A favorite memory of us"
-              class="hero-photo"
-            />
-            <div class="hero-photo-caption">
-              “Tum ho toh saari duniya thodi aur khoobsurat lagti hai.”
-            </div>
+        </div>
+      </div>
+      <div class="confetti-layer" aria-hidden="true"></div>
+    </section>
+
+    <section id="countdown" class="section">
+      <div class="section-inner">
+        <h2>Counting Down To Your Magic Moment 🎂</h2>
+        <p class="subtitle">
+          Because every second that takes me closer to celebrating you is precious.
+        </p>
+        <div class="countdown-timer" aria-label="Countdown to your birthday">
+          <div class="time-box">
+            <span id="days">00</span>
+            <label>Days</label>
+          </div>
+          <div class="time-box">
+            <span id="hours">00</span>
+            <label>Hours</label>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <label>Minutes</label>
+          </div>
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <label>Seconds</label>
           </div>
         </div>
-        <div class="scroll-indicator">Scroll to explore ⬇</div>
-      </section>
+        <p id="countdown-message" class="countdown-message"></p>
+      </div>
+    </section>
 
-      <section id="reveal" class="section">
-        <div class="section-inner">
-          <h2>Your Birthday Letter</h2>
-          <div class="card love-letter">
-            <div class="card-inner">
-              <p class="salutation">To my dearest <span id="her-name-2">[Her Name]</span>,</p>
-              <p>
-                Today the world became softer, warmer and more beautiful—because this was
-                the day you arrived. Since the moment you walked into my life, every day
-                has felt a little more like home.
-              </p>
-              <p>
-                I love the way your smile quietly fixes even my loudest storms, the way
-                your presence turns ordinary moments into memories I never want to forget,
-                and the way your heart holds more kindness than I ever thought possible.
-              </p>
-              <p>
-                If I could wrap all my love for you into words, the universe would run out
-                of pages. So instead, I made this small digital universe, where every
-                sparkle and every heartbeat belongs only to you.
-              </p>
-              <p class="closing">
-                Always yours, <span id="my-name-2">[Your Name]</span> 🫶
-              </p>
+    <section id="gallery" class="section">
+      <div class="section-inner">
+        <h2>Our Little Universe in Photos 📸</h2>
+        <p class="subtitle">Each picture is a tiny chapter of our story together.</p>
+        <div class="gallery-slider">
+          <button class="nav-btn" id="prev-photo" aria-label="Previous photo">‹</button>
+          <div class="gallery-frame">
+            <img id="gallery-image" src="media/photo1.png" alt="Memory photo 1" />
+            <div id="gallery-caption" class="caption">
+              That moment when the world disappeared and it was just us.
             </div>
           </div>
+          <button class="nav-btn" id="next-photo" aria-label="Next photo">›</button>
         </div>
-        <div class="confetti-layer" aria-hidden="true"></div>
-      </section>
+        <button id="auto-play-gallery" class="secondary-btn">Start Slideshow ❤️</button>
+      </div>
+    </section>
 
-      <section id="countdown" class="section">
-        <div class="section-inner">
-          <h2>Counting Down To Your Magic Moment 🎂</h2>
-          <p class="subtitle">
-            Because every second that takes me closer to celebrating you is precious.
-          </p>
-          <div class="countdown-timer" aria-label="Countdown to your birthday">
-            <div class="time-box">
-              <span id="days">00</span>
-              <label>Days</label>
-            </div>
-            <div class="time-box">
-              <span id="hours">00</span>
-              <label>Hours</label>
-            </div>
-            <div class="time-box">
-              <span id="minutes">00</span>
-              <label>Minutes</label>
-            </div>
-            <div class="time-box">
-              <span id="seconds">00</span>
-              <label>Seconds</label>
-            </div>
-          </div>
-          <p id="countdown-message" class="countdown-message"></p>
-        </div>
-      </section>
-
-      <section id="gallery" class="section">
-        <div class="section-inner">
-          <h2>Our Little Universe in Photos 📸</h2>
-          <p class="subtitle">Each picture is a tiny chapter of our story together.</p>
-          <div class="gallery-slider">
-            <button class="nav-btn" id="prev-photo" aria-label="Previous photo">‹</button>
-            <div class="gallery-frame">
-              <img
-                id="gallery-image"
-                src="media/photo1.jpg"
-                alt="Memory photo 1"
-              />
-              <div id="gallery-caption" class="caption">
-                That moment when the world disappeared and it was just us.
-              </div>
-            </div>
-            <button class="nav-btn" id="next-photo" aria-label="Next photo">›</button>
-          </div>
-          <button id="auto-play-gallery" class="secondary-btn">Start Slideshow ❤️</button>
-        </div>
-      </section>
-
-      <section id="voice" class="section">
-        <div class="section-inner">
-          <h2>Listen With Your Heart 🎧</h2>
-          <p class="subtitle">
-            Close your eyes, press play, and let my voice hug you for a moment.
-          </p>
-          <div class="voice-card">
-            <audio id="voice-message" controls>
-              <source src="media/voice-message.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-            <div class="wave" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
+    <section id="voice" class="section">
+      <div class="section-inner">
+        <h2>Listen With Your Heart 🎧</h2>
+        <p class="subtitle">
+          Close your eyes, press play, and let my voice hug you for a moment.
+        </p>
+        <div class="voice-card">
+          <audio id="voice-message" controls>
+            <source src="media/voice-message.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <div class="wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="love-question" class="section">
-        <div class="section-inner">
-          <h2>One Tiny Question For You 💌</h2>
-          <p class="subtitle">
-            Choose carefully… your answer might start another beautiful chapter.
-          </p>
-          <div class="question-card">
-            <p>Will you keep walking through every tomorrow with me, hand in hand? 💍</p>
-            <div class="btn-row">
-              <button id="answer-yes" class="primary-btn">Yes, forever 💖</button>
-              <button id="answer-yes-sneaky" class="secondary-btn">There is no “no” 😌</button>
-            </div>
-            <p id="answer-response" class="response-text"></p>
+    <section id="love-question" class="section">
+      <div class="section-inner">
+        <h2>One Tiny Question For You 💌</h2>
+        <p class="subtitle">
+          Choose carefully… your answer might start another beautiful chapter.
+        </p>
+        <div class="question-card">
+          <p>Will you keep walking through every tomorrow with me, hand in hand? 💍</p>
+          <div class="btn-row">
+            <button id="answer-yes" class="primary-btn">Yes, forever 💖</button>
+            <button id="answer-yes-sneaky" class="secondary-btn">There is no “no” 😌</button>
           </div>
+          <p id="answer-response" class="response-text"></p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="floating-messages" class="section">
-        <div class="section-inner">
-          <h2>Reasons I’m Grateful For You ✨</h2>
-          <p class="subtitle">
-            These little thoughts float through my mind all day when I think of you.
-          </p>
-          <div class="floating-message-box">
-            <p id="floating-text"></p>
-          </div>
+    <section id="floating-messages" class="section">
+      <div class="section-inner">
+        <h2>Reasons I’m Grateful For You ✨</h2>
+        <p class="subtitle">
+          These little thoughts float through my mind all day when I think of you.
+        </p>
+        <div class="floating-message-box">
+          <p id="floating-text"></p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="guestbook" class="section">
-        <div class="section-inner">
-          <h2>Wishes Wall 📝</h2>
-          <p class="subtitle">
-            (Optional) A small corner where close hearts can leave you gentle wishes.
-          </p>
-          <form id="wish-form" class="wish-form">
-            <input
-              type="text"
-              id="wish-name"
-              placeholder="Your name"
-              required
-            />
-            <textarea
-              id="wish-message"
-              placeholder="Write a short sweet wish..."
-              rows="3"
-              required
-            ></textarea>
-            <input
-              type="password"
-              id="wish-admin-code"
-              placeholder="Admin code to approve (optional)"
-            />
-            <button type="submit" class="primary-btn">Send Wish</button>
-          </form>
-          <div class="wishes-list" id="wishes-list" aria-live="polite"></div>
+    <section id="guestbook" class="section">
+      <div class="section-inner">
+        <h2>Wishes Wall 📝</h2>
+        <p class="subtitle">
+          (Optional) A small corner where close hearts can leave you gentle wishes.
+        </p>
+        <form id="wish-form" class="wish-form">
+          <input type="text" id="wish-name" placeholder="Your name" required />
+          <textarea id="wish-message" placeholder="Write a short sweet wish..." rows="3" required></textarea>
+          <input type="password" id="wish-admin-code" placeholder="Admin code to approve (optional)" />
+          <button type="submit" class="primary-btn">Send Wish</button>
+        </form>
+        <div class="wishes-list" id="wishes-list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="final" class="section final-section">
+      <div class="section-inner">
+        <h2>Last Page, Endless Love 🤍</h2>
+        <p class="subtitle">
+          Even when this page ends, my love for you doesn’t.
+        </p>
+        <div class="hug-animation" aria-hidden="true">
+          <div class="heart"></div>
+          <div class="arms"></div>
         </div>
-      </section>
+        <p class="final-message">
+          Thank you for existing, for laughing, for caring, for choosing to share pieces
+          of your beautiful heart with me. I promise to keep showing up for you—in big
+          ways and quiet ways—for every birthday, every ordinary day and every hidden
+          in‑between.
+        </p>
+        <p class="final-message">
+          Whenever life feels heavy, come back here, press play, and remember: you are
+          loved more deeply than these pixels could ever say.
+        </p>
+        <p class="closing">
+          Happy Birthday, my forever favorite person. 🤍
+        </p>
+      </div>
+    </section>
+  </main>
 
-      <section id="final" class="section final-section">
-        <div class="section-inner">
-          <h2>Last Page, Endless Love 🤍</h2>
-          <p class="subtitle">
-            Even when this page ends, my love for you doesn’t.
-          </p>
-          <div class="hug-animation" aria-hidden="true">
-            <div class="heart"></div>
-            <div class="arms"></div>
-          </div>
-          <p class="final-message">
-            Thank you for existing, for laughing, for caring, for choosing to share pieces
-            of your beautiful heart with me. I promise to keep showing up for you—in big
-            ways and quiet ways—for every birthday, every ordinary day and every hidden
-            in‑between.
-          </p>
-          <p class="final-message">
-            Whenever life feels heavy, come back here, press play, and remember: you are
-            loved more deeply than these pixels could ever say.
-          </p>
-          <p class="closing">
-            Happy Birthday, my forever favorite person. 🤍
-          </p>
-        </div>
-      </section>
-    </main>
+  <script src="script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
-
-
