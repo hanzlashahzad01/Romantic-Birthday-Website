@@ -3,10 +3,10 @@
 // =========================
 
 const SETTINGS = {
-  herName: "Umama Maryam", // e.g., "liza"
-  yourName: "Moaz Jatala", // e.g., "tony"
-  birthday: "2026-1-015T00:00:00", // YYYY-MM-DDTHH:mm:ss
-  password: "Happybirthday", // change this and share secretly
+  herName: "Her-PartnerName", // e.g., "liza"
+  yourName: "Your-Name", // e.g., "tony"
+  birthday: "2026-1-012T00:00:00", // YYYY-MM-DDTHH:mm:ss
+  password: "iloveyou", // change this and share secretly
   wishesAdminCode: "approve123", // to mark wishes as approved (local only)
 };
 
@@ -199,17 +199,17 @@ const autoPlayBtn = $("#auto-play-gallery");
 
 const galleryItems = [
   {
-    src: "media/photo1.jpeg",
+    src: "media/photo1.png",
     alt: "Memory together 1",
     caption: "That first moment when I knew: this is my safe place. 🤍",
   },
   {
-    src: "media/photo2.jpeg",
+    src: "media/photo2.png",
     alt: "Memory together 2",
     caption: "Your laugh here is my favorite sound in the entire universe. 💫",
   },
   {
-    src: "media/photo3.jpeg",
+    src: "media/photo3.png",
     alt: "Memory together 3",
     caption: "Har tasveer mein hamara chhota sa khushiyon ka jahaan. 🌙",
   },
