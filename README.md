@@ -58,4 +58,4 @@ All love letter text and captions are directly editable inside `index.html` and 
 - Adjust colors / fonts from `styles.css`.
 - You can copy the project folder and create versions for anniversary, proposal, etc.
 
-
+Made by Hanzla Shahzad 💖
